@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-base {
+    color: #03AAC2 !important;
+}
+
+.text-accent-1 {
+    color: #012638 !important;
+}
+
+.text-accent-2 {
+    color: #9fe6f1 !important;
+}
+
+.bg-base {
+    background-color: #03AAC2 !important;
+}
+
+.bg-accent-1 {
+    background-color: #012638 !important;
+}
+
+.bg-accent-2 {
+    background-color: #9fe6f1 !important;
+}
+
+.button-container {
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(to left, #007bff, #00bcd4);
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.active {
+    font-weight: bolder;
+    border-bottom: 4px solid #9fe6f1;
+}
+
+#navbar {
+    transition: background-color 0.4s;
+}
+
+#navbarSupportedContent .nav-link {
+    font-size: 1.2rem;
+}
+
+.scrolled {
+    background-color: #03AAC2;
+    transition: 0.4s;
+    box-shadow: 0px 1px 10px #333;
+}
+
+.scrolled .nav-link {
+    color: #9fe6f1 !important;
+}
+
+#about .overview {
+    font-size: 1.5rem;
+}
+
+#about .title {
+    font-size: 2rem;
+}
+
+#about .container{
+    padding: 10px 0px;
+    text-align: justify;
+    color: #9fe6f1;
+} 
+
+/* Ensure even margins for the descriptions */
+.education ul li,
+.experience ul li,
+.trainings ul li {
+    margin-bottom: 20px;
+}
+
+/* Style for the description paragraphs */
+.education ul li p,
+.experience ul li p,
+.trainings ul li p {
+    margin: 5px 0; 
+}
+
+/* Style for the headings */
+.education ul li strong,
+.experience ul li strong,
+.trainings ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.tools-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;   
+}
+
+.tools-icons img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto; 
+    height: auto;
+    box-shadow: #9fe6f1 0px 0px 5px;
+    transition: transform 0.3s ease;
+}
+
+.tools-icons img:hover {
+    transform: scale(1.1);
+}
+
+#project .title {
+    font-size: 2rem;
+}
+
+#project .overview {
+    font-size: 1rem;
+}
+
+#project .gallery-item {
+    width: 33%;
+}
+
+.card-text {
+    font-size: 12px;
+    text-align: justify;
+}
+
+#capstone{
+    margin-top: 110px !important;
+}
+
+#contact .title {
+    font-size: 2rem;
+}
+
+#contact .overview {
+    font-size: 1rem;
+}
+
+#contact form input, #contact textarea {
+    border-color: #03AAC2;
+    border-radius: 2px;
+}
+
+.custom-btn {
+    border-radius: 2px;
+    padding: 8px;
+    font-size: 18px;
+    width: 100px;
+}
+
+.custom-btn.custom-btn-primary {
+    background-color: #03AAC2;
+    border-color: #03AAC2;
+}
+
+.bg1 {
+    background: url("./images/contact.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.img-cover {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.full-height {
+    height: 100vh;
+    position: relative;
+}
+
+.hero-title {
+    letter-spacing: 1.5px;
+    font-size: 3rem;
+}
+
+.hero-overview {
+    font-size: 1.2rem;
+}
+
+.portfolio-hero {
+    background: url("./images/landing.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.scroll-link {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 15%;
+    transition: bottom 0.4s;
+    color: #012638;
+}
+
+.scroll-link:hover {
+    transition: all 0.4s;
+    bottom: 15.5%;
+    color: #012638;
+}
