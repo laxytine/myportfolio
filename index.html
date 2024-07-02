@@ -237,7 +237,8 @@
                     <h2 class="text-center text-uppercase text-accent-1 title mb-5"> Get In Touch </h2>
                     <p class="text-center text-accent-1 overview mx-auto">I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out using the form below or via direct message.
                     </p>
-                    <form id="contactForm" class="p-3" action="/send-email" method="post">
+                    <form id="contactForm" class="p-3" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="ea76a36c-64ae-4e0f-9eba-7170e7eb90ce">
                         <div class="form-group">
                             <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name" required>
                         </div>
