@@ -231,3 +231,142 @@ body {
     bottom: 15.5%;
     color: #012638;
 }
+
+
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 800px) {
+    .hero-title {
+        letter-spacing: 1.5px;
+        font-size: 1.5rem;
+    }
+    
+    .hero-overview {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-base {
+        background-color: #03AAC2 !important;
+        margin-top: none !important;
+    }
+
+    #navbarSupportedContent .nav-link {
+        font-size: 1rem;
+    }
+
+    .active {
+        font-weight: bolder;
+        border-bottom: 0px solid #9fe6f1;
+    }
+
+    #about .overview {
+        font-size: 1.5rem;
+    }
+    
+    #about .title {
+        font-size: 2rem;
+    }
+    
+    #about .container{
+        padding: 10px 0px;
+        text-align: justify;
+        color: #9fe6f1;
+    } 
+
+    #about h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+
+    /* Ensure even margins for the descriptions */
+    .education ul li,
+    .experience ul li,
+    .trainings ul li,
+    .skills ul li {
+        margin-left: 10% !important;
+        margin-right: 5% !important;
+    }
+    
+    /* Style for the description paragraphs */
+    .objectives,
+    .education ul li p,
+    .experience ul li p,
+    .trainings ul li p,
+    .skills ul li {
+        margin-left: 10% !important;
+        margin-right: 5% !important;
+    }
+    
+    /* Style for the headings */
+    .education ul li strong,
+    .experience ul li strong,
+    .trainings ul li strong {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 10% !important;
+        margin-right: 5% !important;
+    }
+
+    #project .gallery-item {
+        width: 100%;
+        padding: 10%;
+        margin: auto;
+    }
+
+    #capstone .card{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    #capstone h3 {
+        text-align: center;
+    }
+
+
+    .card-text {
+        display: none !important;
+    }
+    
+    .btn {
+        align-items: center;
+    }
+
+    #contact {
+        margin-top: none !important;
+        padding-top: 0px !important;
+    }
+
+    #contact .form-control {
+        margin: 10px 0px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #contact .title {
+        font-size: 1.5rem;
+    }
+
+    #contact .subtitle {
+        font-size: 1rem;
+    }
+
+    #contact .button {
+        font-size: 1rem;
+    }
+
+  }
+  
