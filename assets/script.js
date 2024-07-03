@@ -11,4 +11,3 @@ window.onscroll = () => {
         nav.classList.add('scrolled');
     }
 };
-

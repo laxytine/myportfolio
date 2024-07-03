@@ -36,11 +36,23 @@ body {
     background-color: #9fe6f1 !important;
 }
 
+
+
 .button-container {
     gap: 10px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.button-container a.button {
+    text-decoration: none; /* Remove the underline by default */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transitions for smooth effects */
+}
+
+.button-container a.button:hover {
+    text-decoration: none; /* Ensure underline is removed on hover */
+    transform: scale(1.05); /* Optional: add a slight scale effect on hover */
 }
 
 .button {
@@ -91,6 +103,11 @@ body {
     color: #9fe6f1;
 } 
 
+.objectives {
+    font-size: 20px;
+    margin: 10px;
+}
+
 /* Ensure even margins for the descriptions */
 .education ul li,
 .experience ul li,
@@ -113,8 +130,13 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
+#about h3{
+    margin-top: 30px;
+    text-decoration: solid;
+}
 
 .tools-icons {
     display: flex;
@@ -147,6 +169,12 @@ body {
 
 #project .gallery-item {
     width: 33%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#project .gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-text {
@@ -176,12 +204,33 @@ body {
     padding: 8px;
     font-size: 18px;
     width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.custom-btn:hover {
+    transform: scale(1.1);
 }
 
 .custom-btn.custom-btn-primary {
     background-color: #03AAC2;
     border-color: #03AAC2;
 }
+
+.contact-icon a {
+    text-decoration: none; /* Remove the underline */
+}
+
+.contact-icon img.hover-icon {
+    width: 40px;
+    gap: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-icon img.hover-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
 
 .bg1 {
     background: url("./images/contact.jpg");
@@ -206,8 +255,10 @@ body {
     font-size: 3rem;
 }
 
+
 .hero-overview {
     font-size: 1.2rem;
+
 }
 
 .portfolio-hero {
@@ -232,7 +283,7 @@ body {
     color: #012638;
 }
 
-
+  
 
 /* Media Queries for Tablet and Mobile */
 @media (max-width: 800px) {
